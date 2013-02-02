@@ -1,2 +1,4 @@
 www:
-  type: static
+  type: nodejs
+data:
+  type: mongodb
