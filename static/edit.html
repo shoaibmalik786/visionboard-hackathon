@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Visionboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      #image_container img {
+        padding: 2px 2px 2px 0px;
+      }
+      #image_container {
+        padding-left: 2px;
+        height: 600px;
+      }
+    </style>
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="bootstrap/ico/favicon.png">
+  </head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Visionboard</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="span4">
+                <input type="button" class="btn btn-primary btn-large" onclick="showFilePicker();" value="Search" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="span4">
+                <br />
+                <div id="image_container">
+                    <img src="https://www.filepicker.io/api/file/v4lRwBoZSfVUWzeJzspH/convert?w=110&h=110&fit=crop" />
+                    <img src="https://www.filepicker.io/api/file/v4lRwBoZSfVUWzeJzspH/convert?w=110&h=110&fit=crop" />
+                    <img src="https://www.filepicker.io/api/file/v4lRwBoZSfVUWzeJzspH/convert?w=110&h=110&fit=crop" />
+                    <img src="https://www.filepicker.io/api/file/v4lRwBoZSfVUWzeJzspH/convert?w=110&h=110&fit=crop" />
+                    <img src="https://www.filepicker.io/api/file/v4lRwBoZSfVUWzeJzspH/convert?w=110&h=110&fit=crop" />
+                    <img src="https://www.filepicker.io/api/file/v4lRwBoZSfVUWzeJzspH/convert?w=110&h=110&fit=crop" />
+                    <img src="https://www.filepicker.io/api/file/v4lRwBoZSfVUWzeJzspH/convert?w=110&h=110&fit=crop" />
+                    <img src="https://www.filepicker.io/api/file/v4lRwBoZSfVUWzeJzspH/convert?w=110&h=110&fit=crop" />
+                    <img src="https://www.filepicker.io/api/file/v4lRwBoZSfVUWzeJzspH/convert?w=110&h=110&fit=crop" />
+                    <img src="https://www.filepicker.io/api/file/v4lRwBoZSfVUWzeJzspH/convert?w=110&h=110&fit=crop" />
+                    <img src="https://www.filepicker.io/api/file/v4lRwBoZSfVUWzeJzspH/convert?w=110&h=110&fit=crop" />
+                    <img src="https://www.filepicker.io/api/file/v4lRwBoZSfVUWzeJzspH/convert?w=110&h=110&fit=crop" />
+                </div>
+            </div>
+                <div class="span3" style="margin-top: 20px; width: 250px;">
+                    <div class="droppable1" style="border: 1px solid grey; height: 250px;">&nbsp;</div>
+                </div>
+                <div class="span3" style="margin-top: 20px; width: 250px; margin-left: 10px;">
+                    <div class="droppable1" style="border: 1px solid grey; height: 250px;">&nbsp;</div>
+                </div>
+                <div class="span3" style="margin-top: 10px; width: 250px;">
+                    <div class="droppable1" style="border: 1px solid grey; height: 250px;">&nbsp;</div>
+                </div>
+                <div class="span3" style="margin-top: 10px; margin-left: 10px; width: 250px;">
+                    <div class="droppable1" style="border: 1px solid grey; height: 250px;">&nbsp;</div>
+                </div>
+            <div class="span3" style="margin-top: 20px;">
+            </div>
+            <div class="span3" style="margin-top: 20px;">
+                    <div class="btn-group">
+                        <button class="btn dropdown-toggle" data-toggle="dropdown">
+                            Save
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Test</a></li>
+                            <li><a href="#">Test2</a></li>
+                        </ul>
+                    </div>
+                <input type="button" class="btn" value="Share" />
+            </div>
+        </div>
+      <hr>
+
+      <footer>
+        <p>&copy; Visionboard 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap-transition.js"></script>
+    <script src="bootstrap/js/bootstrap-alert.js"></script>
+    <script src="bootstrap/js/bootstrap-modal.js"></script>
+    <script src="bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="bootstrap/js/bootstrap-tab.js"></script>
+    <script src="bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="bootstrap/js/bootstrap-popover.js"></script>
+    <script src="bootstrap/js/bootstrap-button.js"></script>
+    <script src="bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+
+    <!-- scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://api.filepicker.io/v1/filepicker.js"></script>
+    <script type="text/javascript">
+        filepicker.setKey('AE4sd80vQCeTrwQNqkQwxz');
+
+        $("#image_container img").draggable({ appendTo: "body", helper: "clone"});
+
+        $(".droppable1").droppable({
+                drop: function(event, ui) {
+                    ui.draggable.attr("src", ui.draggable.attr("src").replace("110", "250").replace("110", "250"));
+                    $(this).html(ui.draggable);
+                }
+            });
+
+        function showFilePicker() {
+            filepicker.pick({
+                mimetypes: ['image/*'],
+                services:['IMAGE_SEARCH'],
+                },
+                function(FPFile){
+                    addImage(FPFile);
+                },
+                function(FPError){
+                    console.log(FPError.toString());
+                    window.alert("Error: " + FPError.toString());
+                }
+            );
+        }
+
+        function addImage(FPFile) {
+            console.log(JSON.stringify(FPFile));
+            var imgUrl = '<img src="' + FPFile.url + '/convert?w=110&h=110&fit=scale">';
+            var newImg = $(imgUrl);
+            console.log(newImg);
+            $(newImg).draggable({ appendTo: "body", helper: "clone"});
+            $('#image_container').append(newImg);
+            var imagesList = localStorage.getItem("img");
+            if (imagesList == null) {
+                imagesList = [];
+            }
+            imagesList[imagesList.length] = imgUrl;
+            localStorage.setItem("img", imagesList);
+            console.log(localStorage.getItem("img"));
+        }
+    </script>
+
+  </body>
+</body>
+</html>

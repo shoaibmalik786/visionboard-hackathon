@@ -1,0 +1,7 @@
+.DS_Store
+public/gen
+*.swp
+.dotcloud
+*.sublime-project
+*.sublime-workspace
+*~
